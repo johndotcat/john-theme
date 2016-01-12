@@ -6,12 +6,8 @@
 {{! Everything inside the #post tags pulls data from the post }}
 {{#post}}
 
-<header>
-    <nav>
-        {{#if @blog.navigation}}{{/if}}
-    </nav>
-</header>
-<hr>
+{{> header}}
+
 <mainrole="main">
     <article>
 

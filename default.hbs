@@ -19,16 +19,14 @@
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
 </head>
-<body class="{{body_class}} nav-closed">
+<body class="{{body_class}}">
 
     {{navigation}}
 
-    <div>
+    <div class="main">
 
         {{! Everything else gets inserted here }}
         {{{body}}}
-
-        <hr>
 
         <footer>
             <a href="{{@blog.url}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}} - Proudly published with <a href="https://ghost.org">Ghost</a>

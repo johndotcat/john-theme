@@ -1,15 +1,8 @@
 {{!< default}}
 {{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
 
-{{! The big featured header }}
-<header>
-    <h1>{{@blog.title}}</h1>
-    <h2>{{@blog.description}}</h2>
-    <nav>
-        {{#if @blog.navigation}}{{/if}}
-    </nav>
-</header>
-<hr>
+{{> header}}
+
 {{! The main content area on the homepage }}
 <main id="content" role="main">
 
