@@ -21,9 +21,14 @@
 </head>
 <body class="{{body_class}}">
 
-    {{navigation}}
+    
 
-    <div class="main">
+    <div class="wraper">
+        {{#if @blog.navigation}}
+            {{navigation}}
+        {{/if}}
+        
+        {{>header}}
 
         {{! Everything else gets inserted here }}
         {{{body}}}
